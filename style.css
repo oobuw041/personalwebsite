@@ -95,14 +95,14 @@ p{
     .centered-hr {
         width: 50%; /* Adjust width as needed */
         margin: auto; /* Centers the HR */
-        position: absolute;
+        position: fixed;
         top: 100px; /* Distance from top */
         left: 50px; /* Distance from left */
         width: 60%;
     }
 
     .footer-hr{
-        position: absolute;
+        position:fixed;
         top: 630px; /* Distance from top */
         left: 50px; /* Distance from left */
         width: 100%;
