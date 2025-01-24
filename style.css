@@ -1,3 +1,93 @@
 body{
-    background-color: #f4f4f4;
+    background-color: #f2e7e7;
 }
+#image{
+position: fixed;
+width: 350px;
+top: 200px;
+left: 700px;
+border-radius: 45%;
+
+}
+
+p{
+    font-size: 20px;
+    color: #000000;
+    text-align: left;
+    position: fixed;
+    top: 250px;
+    left: 100px;
+
+}
+
+.navbar ul{
+    list-style-type: none;
+    background-color: none;
+     padding: 50px;
+     margin: 0px;
+     overflow: hidden;
+     position: fixed;
+     top: 0px;
+     width: 100%;
+     }
+   
+     .navbar a{
+         text-decoration: none;
+         color: rgb(9, 8, 8);
+         padding: 15px;
+         display: block;
+        text-align: center;
+        font-size: 20px;
+     }
+
+     .navbar a:hover{
+         background-color: hwb(319 61% 17%);
+        
+     }
+
+     .navbar li{
+         float: left;
+     }
+
+     #footer{
+        background-color: none;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+    }
+
+    #projects{
+        background-color: none;
+        color: rgb(15, 14, 14);
+        text-align: left;
+        padding: 20px;
+        position: fixed;
+        top: 120px;
+        font-size: 17px;
+        width: 100%;
+        list-style-type: none;
+        margin-left: 250px;
+    }
+
+    #p1{
+        background-color: none;
+        color: rgb(15, 14, 14);
+        font-style: bold;
+        text-align: left;
+        position: fixed;
+        top: 100px;
+        font-size: 20px;
+        width: 100%;
+        list-style-type: none;
+        left: 25px;
+        margin-left: 250px;
+    }
+
+    #icon{
+        position: fixed;
+        top: 600px;
+        left: 100px;
+    }
