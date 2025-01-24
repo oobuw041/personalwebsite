@@ -89,7 +89,7 @@ p{
 
     #p2{
         position: fixed;
-        top: 500px;
+        top: 450px;
         left: 100px;
     }
     .centered-hr {
@@ -103,7 +103,7 @@ p{
 
     .footer-hr{
         position:fixed;
-        top: 630px; /* Distance from top */
+        top: 600px; /* Distance from top */
         left: 50px; /* Distance from left */
         width: 100%;
     }
