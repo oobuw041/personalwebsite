@@ -11,3 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('nav-active');
+}
