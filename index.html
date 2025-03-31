@@ -12,8 +12,7 @@
 </head>
 <body>
   
-    <nav>
-
+    <nav  class="topnav" id="myTopnav">
         <a href="#home" class="nav-link">Oghenekeno Obuwoma</a>
         <a href="#projects" class="nav-link">Projects</a>
         <a href="KenoResume.pdf">Resume</a>
@@ -25,6 +24,9 @@
             <i class="fa-solid fa-envelope fa-2x" style="color: #ffffff;"></i>
         <a href="tel:343-77-9652" class="icons">
             <i class="fa-solid fa-phone fa-2x " style="color: #ffffff"></i></a> 
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
           
     </nav>
 
@@ -124,6 +126,16 @@
   </div>
 
 </section>
+<script>
+ function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.classList.contains("responsive")) {
+        x.classList.remove("responsive");
+    } else {
+        x.classList.add("responsive");
+    }
+}
 
+  </script>
 <script src="index.js"></script>
 </body>

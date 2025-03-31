@@ -8,7 +8,7 @@ html {
             font-family:Garamond;
        
         }
-       nav {
+       .topnav {
             position: fixed;
             top: 0;
             left: 0;
@@ -21,33 +21,30 @@ html {
             background-color: #EFA3C4;
             border:solid;
             border-width:1px;
+            overflow: hidden;
+            
         }
-        .navbar-nav .nav-item {
-            position: relative; 
-            z-index: 10; 
-            top: 0px;}
+      
 
             
-       nav a {
+        .topnav a {
             color: white !important;
             text-decoration: none;
             padding: 10px 20px !important;
             display: inline-block !important; 
             border: #42393d;
         }
-        nav a:hover{
+        .topnav a:hover{
          background-color: #f58fbb;
          box-shadow: inset;
         }
-    
-.icons{
-    position: relative;
-    left:0px;
-    top:10px;
-    z-index: 1000;
-    padding: 5px;
+        .topnav a:active{
+            background-color: #f58fbb;
+            box-shadow: inset;
+           }
+        .topnav a.icon{
+        display: none!important;}
 
-}
 
 
 section {
@@ -188,24 +185,40 @@ margin: 20px;
 
 
 /*Responsiveness*/
-@media (max-width: 768px) {
-    nav {
+@media screen and (max-width: 600px) {
+    .topnav {
         height: auto;
         padding: 10px;
         text-align: left;
-        font-size: 10px;
+        font-size: 15px;
     }
-
-    nav a {
-        display: block;
-        padding: 7px;
+    
+    .topnav a:not(:first-child) {
+        display: none !important;
     }
-
-    .icons {
-        top: 5px;
-        padding: 2px;
+    
+    .topnav a.icon {
+        float: right !important;
+        display: block !important;
     }
-
+    
+    /* When the menu is responsive */
+    .topnav.responsive {
+        position: relative;
+    }
+    
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+    .topnav.responsive a {
+        float: none !important;
+        display: block !important;
+        text-align: left;
+    }
+    
     section {
         font-size: 1.3rem;
         text-align: center;
